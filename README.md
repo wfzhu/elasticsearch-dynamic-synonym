@@ -1,22 +1,18 @@
 dynamic synonym for ElasticSearch
 ==================================
 
-The dynamic synonym plugin adds a synonym token filter that reloads the synonym file(local file or remote file) at given intervals (default 60s).
+- 此版本fork自 https://github.com/bells/elasticsearch-analysis-dynamic-synonym
+- 进行了elasticsearch 版本的修改，目前可以支持5.x.x
+- 如果需要修改elasticsearch版本可以自行修改
+- 修改pom.xml中的
+```
+<properties>
+    <elasticsearch.version>5.0.1</elasticsearch.version>
+</properties>
+```
 
-Version
--------------
 
-dynamic synonym version | ES version
------------|-----------
-master| 5.x -> master
-5.1.1 |	5.1.1
-2.3.0 | 2.3.0
-2.2.0 | 2.2.0
-2.1.0 | 2.1.0
-2.0.0 | 2.0.0 
-1.6.0 | 1.6.X
-
-Installation
+安装方法
 --------------
 
 1. `mvn package`
